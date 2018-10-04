@@ -1,0 +1,191 @@
+/* true to all pages  */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777; 
+  background-image: url("../images/concrete_seamless.png");
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+#headerBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:65px;
+    color:#cccccc;
+    background: #ffffff;
+   border-bottom:2px solid #cccccc 
+  }
+
+header {
+  
+  position: absolute;
+  margin-left: 260px;
+  padding: 20px;
+  height: 25px;
+  background:#4aaaa5;
+  color:#ffffff;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button {
+  float: right;
+  position: relative;
+  overflow: auto;
+  padding: 20px;
+  margin-right: 250px;
+}
+
+.button a { 
+  font-size: 20px;
+  color: #777777;
+  text-decoration: none;
+}
+
+.button a:hover {
+  color: #4aaaa5;
+}
+
+/* main content box */
+#content {
+  position: relative;
+  width: 960px;
+  margin: 0 auto 0 auto;
+  top: 110px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+h1 {
+  padding: 10px 0;
+  margin-top: -10px;
+  background: white;
+  color:#4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 150%;
+  border-bottom:2px solid #cccccc 
+}
+
+/* end of content box */
+footer {
+  width: 100%;
+  height: 50px;
+  border-top: 5px solid #4aaaa5;
+  color: #ddd;
+  font-size: .75em;
+  text-align: center;
+  background-color: #666;
+  flex-shrink: 0;
+position: fixed;
+bottom: 0;
+left: 0;
+ }
+
+ .copyright {
+  position: fixed;
+  bottom: 0;
+  margin: 5px auto;
+  width: 100%;
+ }
+
+ 
+/* index style  */
+#bio-image {
+    height: 200px;
+    width: 150px;
+    margin-right: 10px;
+    float: left;
+ }
+
+ .about-me {
+  padding: 0;
+  margin: 20px 0 0 0;
+  line-height: 150%;
+ }
+  
+ /* contact style  */
+ input[type=text] {
+  width: 100%;
+  padding: 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 70px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/* portfolio style */
+
+.gallery {
+  margin: 15px; 
+  float: left;
+}
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.description {
+  padding: 15px;
+  position: relative;
+  bottom: 60px;
+  text-align: center;
+  color: white;
+  background:#4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* screen changes */
+
+/* Wheen screen is 980 or less  */
+@media screen and (max-width: 980px) {
+
+}
+
+/* When screen is 768 or less */
+@media screen and (max-width: 768px) {
+  .button {
+    margin-right: auto;
+  }
+  header {
+  margin-left: auto;
+}
+body {
+  /* background-color: red; */
+  /* background-image: url(null); */
+}
+#content {
+  width: Auto;
+}
+}
+
+/* when screen is 640 or less  */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: red;
+    background-image: url(null);
+  }
+  #content {
+    width: Auto;
+  }
+}
