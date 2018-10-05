@@ -160,6 +160,20 @@ textarea {
 /* Wheen screen is 980 or less  */
 @media screen and (max-width: 980px) {
 
+  .button {
+    margin-right: auto;
+  }
+  header {
+  margin-left: 40px;
+}
+
+#content {
+  position: relative;
+  right: 120px;
+  width: 600px;
+  top: 100px;
+}
+
 }
 
 /* When screen is 768 or less */
@@ -168,24 +182,48 @@ textarea {
     margin-right: auto;
   }
   header {
-  margin-left: auto;
+    margin-left: 20px;
 }
-body {
-  /* background-color: red; */
-  /* background-image: url(null); */
-}
+
 #content {
-  width: Auto;
+  position: relative;
+  left: 0;
+  width: 650px;
+  top: 100px;
 }
+
 }
 
 /* when screen is 640 or less  */
 @media screen and (max-width: 640px) {
-  body {
-    background-color: red;
-    background-image: url(null);
-  }
+  
   #content {
-    width: Auto;
+    position: relative;
+    left: 0;
+    width: 525px;
+    top: 110px;
+    font-size: 13px;
   }
+
+  header {
+    
+    margin-left: 0;
+		width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .button  {
+   
+    margin-top: 65px;
+    padding:10px;
+		width: 100%;
+    text-align: center;
+     background: #ffffff;
+     padding-right: 0;
+  }
+
+  .button a { 
+    font-size: 15px;
+  }
+  
 }
